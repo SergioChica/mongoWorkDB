@@ -1,0 +1,168 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+{
+    _id: 1,
+    title: "Golden Retriever",
+    price: 800,
+    description: "Un amigable Golden Retriever listo para ser tu compañero leal.",
+    category: "Perros",
+    image: "perrito"
+    },
+    {
+    _id: 2,
+    title: "Gato Siames",
+    price: 500,
+    description: "Un elegante Gato Siames que te cautivará con su mirada intensa.",
+    category: "Gatos",
+    image: "gatito"
+    },
+    {
+    _id: 3,
+    title: "Canario Amarillo",
+    price: 50,
+    description: "Un encantador Canario Amarillo para llenar tu hogar con su hermoso canto.",
+    category: "Aves",
+    image: "pajarito"
+    },
+    {
+    _id: 4,
+    title: "Hámster Peludo",
+    price: 20,
+    description: "Un pequeño hámster peludo, perfecto para espacios reducidos y niños.",
+    category: "Roedores",
+    image: "ratoncito"
+    },
+    {
+    _id: 5,
+    title: "Tortuga Terrestre",
+    price: 100,
+    description: "Una tranquila tortuga terrestre que se convertirá en tu compañera silenciosa.",
+    category: "Reptiles",
+    image: "tortuguita"
+    },
+    {
+    _id: 6,
+    title: "Conejo Enano",
+    price: 70,
+    description: "Un adorable conejo enano, perfecto para hogares con niños.",
+    category: "Roedores",
+    image: "conejito"
+    },
+    {
+    _id: 7,
+    title: "Pez Betta",
+    price: 15,
+    description: "Un colorido pez Betta que añadirá vida a tu acuario.",
+    category: "Peces",
+    image: "pececito"
+    },
+    {
+    _id: 8,
+    title: "Iguana Verde",
+    price: 120,
+    description: "Una majestuosa iguana verde para los amantes de los reptiles exóticos.",
+    category: "Reptiles",
+    image: "iguanita"
+    },
+    {
+    _id: 9,
+    title: "Perico Australiano",
+    price: 180,
+    description: "Un colorido Perico Australiano que será la estrella de tu hogar.",
+    category: "Aves",
+    image: "periquito"
+    },
+    {
+    _id: 10,
+    title: "Dálmata Cachorro",
+    price: 600,
+    description: "Un tierno Dálmata cachorro listo para llenar tu vida de alegría.",
+    category: "Perros",
+    image: "perrito2"
+    },
+    {
+    _id: 11,
+    title: "Gato Persa",
+    price: 700,
+    description: "Un elegante Gato Persa con pelaje exquisito y actitud regia.",
+    category: "Gatos",
+    image: "gatito2"
+    },
+    {
+    _id: 12,
+    title: "Pez Dorado",
+    price: 10,
+    description: "Un clásico pez dorado que trae buenos augurios a tu hogar.",
+    category: "Peces",
+    image: "pececito2"
+    },
+    {
+    _id: 13,
+    title: "Cobaya Peluda",
+    price: 30,
+    description: "Una cobaya peluda que hará las delicias de los más pequeños.",
+    category: "Roedores",
+    image: "rantoncito2"
+    },
+    {
+    _id: 14,
+    title: "Bulldog Francés",
+    price: 900,
+    description: "Un Bulldog Francés cariñoso y de apariencia inconfundible.",
+    category: "Perros",
+    image: "perrito2"
+    },
+    {
+    _id: 15,
+    title: "Cotorra Colorida",
+    price: 120,
+    description: "Una cotorra colorida que alegrará cualquier espacio con su parloteo alegre.",
+    category: "Aves",
+    image: "mascota"
+    },
+    {
+    _id: 16,
+    title: "Serpiente Python",
+    price: 150,
+    description: "Una serpiente Python para los amantes de los reptiles más grandes.",
+    category: "Reptiles",
+    image: "mascota"
+    },
+    {
+    _id: 17,
+    title: "Corgi Peludo",
+    price: 750,
+    description: "Un Corgi peludo que se convertirá en tu fiel compañero de aventuras.",
+    category: "Perros",
+    image: "mascota"
+    },
+    {
+    _id: 18,
+    title: "Erizo Curioso",
+    price: 40,
+    description: "Un erizo curioso perfecto para aquellos que buscan una mascota única.",
+    category: "Roedores",
+    image: "mascota"
+    },
+    {
+    _id: 19,
+    title: "Siamés de Pelo Largo",
+    price: 550,
+    description: "Un Siamés de pelo largo con una elegancia incomparable.",
+    category: "Gatos",
+    image: "mascota"
+    },
+    {
+    _id: 20,
+    title: "Pez Discus",
+    price: 80,
+    description: "Un majestuoso pez Discus que destacará en tu acuario.",
+    category: "Peces",
+    image: "mascota"
+    }
+])
