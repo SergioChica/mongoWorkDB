@@ -1,0 +1,7 @@
+use("pet_store")
+
+db.inventory.updateOne({_id: 21}, {
+  $push: {
+    tags: "headphone"
+  }
+})

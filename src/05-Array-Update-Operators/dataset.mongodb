@@ -1,0 +1,13 @@
+use("pet_store")
+
+db.inventory.drop()
+
+db.inventory.insertMany([
+  { _id: 21, item: { name: "raton", description : "ratoncito."}, qty: 15, tags: [ "boom", "bas", "tik"], },
+  { _id: 22, item: { name: "perro", description : "perrito"}},
+  { _id: 23, item: { name: "aveja", description : "avejita" }},
+  { _id: 24, item: { name: "sapo", description : "sapito"}},
+  { _id: 25, item: { name: "gato", description: "gatito" }},
+])
+
+db.inventory.find()
